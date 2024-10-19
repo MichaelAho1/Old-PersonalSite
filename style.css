@@ -1,0 +1,217 @@
+body {
+    width: 100%;
+    background-color: gray;
+}
+
+.navigation {
+    display: flex;
+    padding: 10px;
+    background-color:black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.stockBar {
+    display: flex;
+    padding: 10px;
+    background-color:rgb(17, 17, 17);
+    width: 100%;
+    position: fixed;
+    top: 35px;
+    padding: 0;
+    left: 0;
+    justify-content: right;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.topSide {
+    font-weight: 500;
+    font-family:'Times New Roman', Times, serif;
+    font-size-adjust: 0.6;
+    color:white;
+    background-color: black;
+    cursor: pointer;
+    border-color:black;
+    border: none;
+    box-shadow: none;
+}
+.topSide:hover {
+    background-color: rgb(56, 54, 54);
+}
+
+section {
+    display: flex; 
+    gap: 10px; 
+}
+
+#infoBox {
+    opacity: 0;
+    display: block; 
+    height: auto;  
+    background-color: rgb(17, 17, 17);
+    animation: moveBox1 23s linear infinite;
+    animation-delay: 0.5s;
+    color: white;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+#box1 {
+    opacity: 0;
+    display: block; 
+    height: auto;  
+    background-color: rgb(17, 17, 17);
+    animation: moveBox1 23s linear infinite;
+    animation-delay: 1.5s; 
+    color: white;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+@keyframes moveBox1 {
+    0% {
+        transform: translateX(30vw); 
+        opacity: 0; 
+    }
+    10% {
+        opacity: 1; /* Fade in early in the animation */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-100vw); /* Move off-screen */
+    }
+}
+#box2 {
+    opacity: 0;
+    display: block; 
+    height: auto;  
+    background-color: rgb(17, 17, 17);
+    animation: moveBox1 23s linear infinite;
+    animation-delay: 3s; 
+    color: white;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+#box3 {
+    opacity: 0;
+    display: block; 
+    height: auto;  
+    background-color: rgb(17, 17, 17);
+    animation: moveBox1 23s linear infinite;
+    animation-delay: 4.5s; 
+    color: white;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+#box4 {
+    opacity: 0;
+    display: block; 
+    height: auto;  
+    background-color: rgb(17, 17, 17);
+    animation: moveBox1 23s linear infinite;
+    animation-delay: 6s; 
+    color: white;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;     
+    margin-top: 4%;          
+}
+
+#headshot {
+    margin-top: 70px;
+    width: 205px;           
+    height: 230px;            
+    border-radius: 50%;       
+    object-fit: cover;        
+}
+#name {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size-adjust: 0.8;
+    margin-top: 5px;
+}
+#description {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-top: -12px;
+    font-family:'Times New Roman', Times, serif;
+    font-size-adjust: 0.8;
+    opacity: 0.6;
+}
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.About {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size-adjust: 0.53;
+    opacity: 0.75;
+}
+#head3 {
+    opacity: 1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size-adjust: .75;
+    border-bottom-style:groove;
+}
+#Projects {
+    text-align: center; 
+}
+#header {
+    border-bottom: solid;
+}
+
+.projectContainer {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.projectBox {
+    width: 100%; 
+    height: 100%;
+    border: solid;
+}
+
+#stockProject {
+    background-image: url('downloads/stockMarketGame.png');
+    background-size: cover; /* Makes sure the image covers the whole area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+}
+
+#stockProject:hover {
+    cursor: pointer; 
+    transform: scale(1.05); 
+}
+
+.projectHeader {
+    margin-bottom: 1px;
+}
