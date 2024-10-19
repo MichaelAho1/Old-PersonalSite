@@ -78,7 +78,7 @@ function average(array) {
         upDown = `up ${average}%`;
         text.innerHTML = `<span style="color: green; font-weight: bold;">${upDown}</span>`;
     } else {
-        upDown = `uown ${average}%`;
+        upDown = `down ${average}%`;
         text.innerHTML = `<span style="color: red; font-weight: bold;">${upDown}</span>`;
     }
 
