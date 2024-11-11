@@ -73,6 +73,7 @@ function average(array) {
         average += array[i];
     }
     const text = document.getElementById("upOrDown");
+    average = average / 4;
     average = average.toFixed(2);
     if(average >= 0) {
         upDown = `up ${average}%`;
