@@ -88,10 +88,10 @@ function average(array) {
 
 async function run() {
     await Promise.all([
-        main("AAPL", "#box1"),
-        main("IBM", "#box2"),
-        main("META", "#box3"),
-        main("AMZN", "#box4")
+        main("TOST", "#box1"),
+        main("UAL", "#box2"),
+        main("V", "#box3"),
+        main("TSLA", "#box4")
     ]);
     average(array);
 }
