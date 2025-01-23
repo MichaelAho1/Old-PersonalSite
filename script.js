@@ -90,7 +90,7 @@ async function run() {
     await Promise.all([
         main("TOST", "#box1"),
         main("UAL", "#box2"),
-        main("V", "#box3"),
+        main("OKLO", "#box3"),
         main("TSLA", "#box4")
     ]);
     average(array);
