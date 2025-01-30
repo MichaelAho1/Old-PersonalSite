@@ -89,9 +89,9 @@ function average(array) {
 async function run() {
     await Promise.all([
         main("TOST", "#box1"),
-        main("UAL", "#box2"),
+        main("GOOG", "#box2"),
         main("OKLO", "#box3"),
-        main("TSLA", "#box4")
+        main("NVDA", "#box4")
     ]);
     average(array);
 }
